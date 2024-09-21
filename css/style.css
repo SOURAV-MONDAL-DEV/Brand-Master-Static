@@ -1,11 +1,23 @@
 /********** Template CSS **********/
 :root {
     --primary: #ff0084;
-    --secondary: #e50299;
+    --secondary: #0a02e5;
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
 
+.themeTextClr {
+    color: var(--primary);
+}
+
+.themeBgClr {
+    background-color: var(--primary);
+}
+
+.themeBrdClr {
+    border-radius: 100%;
+    border-color: var(--primary);
+}
 
 /*** Spinner ***/
 #spinner {
@@ -238,7 +250,7 @@ h6,
     height: 10px;
     top: 2px;
     left: 0;
-    background: rgba(33, 66, 177, .5);
+    background: rgba(255, 0, 106, 0.5)
 }
 
 .section-title h6::after {
@@ -269,7 +281,9 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    /* background: url(../img/icon-shape-primary.png) center center no-repeat; */
+    background-color: var(--primary);
+    border-radius: 8px;
     transition: .5s;
 }
 
